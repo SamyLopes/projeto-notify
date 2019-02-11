@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, minmax(200px, auto));
+    grid-template-areas:
+    "header"
+    "contents"
+    "leads"
+    "social-media"
+    "footer";
+}
+
+.notify h3 {
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 30pt;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+.notify span {
+    color: lightgreen;
+    font-size: 20pt;
+}
+
+.text1 {
+    margin-left: 200px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.separacao-img {
+    display: flex;
+}
+
+.icone-redondo {
+    margin-left: 10px;
+    border-radius: 100%;
+    width: 50px;
+    height: 40px;
+    background-color:rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    text-align: center;
+}
+
+#windows-color {
+    background-color: #2ECC71;
+}
+
+
+header {
+    border-top: 5px solid lightgreen;
+    grid-area: header;
+    background-image: url("assets/banner.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 450px;
+}
+
+#hand {
+    width: 300px;
+    margin-left: 800px;
+    margin-top: -225px;
+}
+
+.contents {
+    padding-top: 50px;
+    grid-area: contents;
+}
+
+.div-icones2 {
+    display:flex;
+    justify-content: space-around;
+}
+
+.icones-img {
+    width: 200px;
+    text-align: center;
+}
+
+.icones-img p {
+    color: #616A6B;
+}
+
+.icones-img h3 {
+    font-weight: bold;
+}
+
+.icones-img .icone-redondo {
+    width: 70px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+#color-green {
+    background-color: #2ECC71;
+}
+
+.leads {
+    background-color: #E5E8E8;
+    display: flex;
+    grid-area: leads;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.leads h3 {
+    font-weight: bold;
+}
+
+#barrinha {
+    width: 200px;
+    height: 20px;
+    border-radius: 8px;
+}
+
+#botao {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #2ECC71;
+}
+
+.leads img {
+    width: 380px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.social-media {
+    grid-area: social-media;
+    margin: 50px;
+}
+
+.justificar p {
+    text-align: center;
+}
+
+footer {
+    background-color: #F2F1EF;
+    grid-area: footer;
+}
